@@ -16,13 +16,13 @@ export default function HlsPlayer() {
 
     // SIGNED COOKIES FOR ALL FILES
     let response = await axios.post("/api/signedCookies", {
-      url: `https://d3nnxy7d703otu.cloudfront.net/mov_bbb.mp4`,
+      url: `${process.env.NEXT_PUBLIC_CLOUDFRONT_LINK}/mov_bbb.mp4`,
     });
     let data = response.data;
 
     // SIGNED URL FOR MP4 FILE
     response = await axios.post("/api/signedUrl", {
-      url: "https://d3nnxy7d703otu.cloudfront.net/mov_bbb.mp4",
+      url: `${process.env.NEXT_PUBLIC_CLOUDFRONT_LINK}/mov_bbb.mp4`,
     });
     data = response.data;
     setSignedUrlMp4(data.signedUrl);
