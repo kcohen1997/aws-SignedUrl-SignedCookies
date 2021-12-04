@@ -1,0 +1,29 @@
+{
+  "name": "aws-signedUrlsExamples",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.7.0",
+    "@emotion/styled": "^11.6.0",
+    "@material-ui/core": "^4.12.3",
+    "@mui/material": "^5.2.2",
+    "aws-cloudfront-sign": "^2.2.0",
+    "aws-sdk": "^2.1019.0",
+    "axios": "^0.24.0",
+    "cookie": "^0.4.1",
+    "js-cookie": "^3.0.1",
+    "next": "12.0.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-hls-player": "^3.0.7"
+  },
+  "devDependencies": {
+    "eslint": "7.32.0",
+    "eslint-config-next": "12.0.2"
+  }
+}
